@@ -1,6 +1,12 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/about";
 
+interface IAboutProps {
+  loaderData: {
+    message: string;
+  };
+}
+
 export function meta({}: Route.MetaArgs) {
   return [{ title: "About" }, { name: "description", content: "About page" }];
 }
@@ -9,7 +15,7 @@ export async function loader() {
   return { message: "About data" };
 }
 
-export default function About({ loaderData }) {
+export default function About({ loaderData }: IAboutProps) {
   return (
     <div>
       <h1>About</h1>
