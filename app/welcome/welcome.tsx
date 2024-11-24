@@ -42,7 +42,12 @@ export function Welcome() {
               ))}
             </ul>
           </nav>
-          <Link to="/about">About page</Link>
+          <p>
+            <Link to="/about">About page</Link>
+          </p>
+          <p>
+            <Link to="/movies">Movies page</Link>
+          </p>
         </div>
       </div>
     </main>
