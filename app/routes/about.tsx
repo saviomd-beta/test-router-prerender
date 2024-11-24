@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
   return [{ title: "About" }, { name: "description", content: "About page" }];
 }
 
-export async function loader() {
+export async function clientLoader() {
   return { message: "About data" };
 }
 
